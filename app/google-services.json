@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "205300508764",
+    "project_id": "accesmembres-56123",
+    "storage_bucket": "accesmembres-56123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205300508764:android:58ac633f5bd0549dda9e99",
+        "android_client_info": {
+          "package_name": "com.szchen.accesmembres"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "205300508764-7ahafokvn175b2dc7sqojub9bbo1h9dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmcC4PoueG2oZPPwHmOimxprXyy6my6NU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "205300508764-7ahafokvn175b2dc7sqojub9bbo1h9dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
