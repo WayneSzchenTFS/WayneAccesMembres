@@ -13,9 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    public void entrer(View view) {
-        startActivity(new Intent(getApplication(), MemberLogin.class));
+    public void entrer(View view)
+    {
+        startActivity(new Intent(getApplication(),MemberLogin.class));
         finish();
     }
 }
+
+

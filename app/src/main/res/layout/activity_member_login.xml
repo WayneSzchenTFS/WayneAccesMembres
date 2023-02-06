@@ -1,117 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MemberLogin">
 
+    <TextView
+    android:id="@+id/loIdentification"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Identification"
+    android:textColor="#CD0000"
+    android:textSize="36sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.117" />
+
+    <TextView
+    android:id="@+id/loLogin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Connexion"
+    android:textSize="22sp"
+    app:layout_constrainedHeight="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loIdentification"
+    app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+    android:id="@+id/loEmail"
+        android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Adresse e-mail"
+    android:inputType="textEmailAddress"
+    android:minHeight="48dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loLogin"
+    app:layout_constraintVertical_bias="0.089" />
+
+    <EditText
+    android:id="@+id/loPass"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="Mot de Passe (min. 6 charactère)"
+    android:inputType="textPassword"
+    android:minHeight="48dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loEmail"
+    app:layout_constraintVertical_bias="0.104" />
+
     <Button
-        android:id="@+id/btnValider"
-        android:layout_width="313dp"
-        android:layout_height="48dp"
-        android:text="Valider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginPasse"
-        app:layout_constraintVertical_bias="0.13" />
-
-    <EditText
-        android:id="@+id/LoginPasse"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Mot de passe (min. 6 caractères)"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginEmail"
-        app:layout_constraintVertical_bias="0.126" />
-
-    <EditText
-        android:id="@+id/LoginEmail"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Adresse Email"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.098" />
+    android:id="@+id/btnLogin"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:text="Entrer"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loPass"
+    app:layout_constraintVertical_bias="0.205" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Se connecter"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.115" />
+    android:id="@+id/loRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Nouveau membre? Créer un compte"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+    app:layout_constraintVertical_bias="0.137" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="233dp"
-        android:layout_height="39dp"
-        android:text="Identification"
-        android:textColor="#770B0B"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
-
-    <TextView
-        android:id="@+id/txtNouveau"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nouveau membre? Créer un compte"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnValider"
-        app:layout_constraintVertical_bias="0.11" />
-
-    <TextView
-        android:id="@+id/forgotPasse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mot de passe oublié"
-        android:textColor="#E91E63"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNouveau"
-        app:layout_constraintVertical_bias="0.658" />
+    android:id="@+id/loForgor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:text="Forgot Password?"
+    android:textColor="#FF0000"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loRegister"
+    app:layout_constraintVertical_bias="0.779" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/forgotPasse"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNouveau" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:id="@+id/loPBar"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:visibility="invisible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loRegister"
+    app:layout_constraintVertical_bias="0.369" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
